@@ -3,6 +3,7 @@ package onb.com.scf.commonms.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,7 @@ import onb.com.scf.commonms.service.PincodeService;
 
 @RestController
 @RequestMapping("scfu/api/")
+@CrossOrigin
 public class PinCodeController {
 	@Autowired PincodeService pincodeService;
 	@GetMapping("/getPincodeData/{pinCode}")
