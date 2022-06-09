@@ -9,5 +9,6 @@ public class PinCodeDetails {
 	private String State;
 	private String Pincode;
 	private String Country;
+	private String areaName;
 
 }
