@@ -43,7 +43,7 @@ public class PincodeServiceImpl implements PincodeService {
 					JSONArray cityColl = (JSONArray) object.get("PostOffice");
 					if (!cityColl.isEmpty()) {
 						for (int i = 0; i < cityColl.length(); i++) {
-							JSONObject cityData = (JSONObject) cityColl.get(0);
+							JSONObject cityData = (JSONObject) cityColl.get(i);
 							PinCodeDetails obj = new PinCodeDetails();
 							obj.setDistrict(cityData.getString("District"));
 							obj.setState(cityData.getString("State"));
