@@ -50,7 +50,7 @@ public class PincodeServiceImpl implements PincodeService {
 							obj.setCountry(cityData.getString("Country"));
 							obj.setPincode(cityData.getString("Pincode"));
 							obj.setAreaName(cityData.getString("Name"));
-							obj.setCityName(cityData.getString("Region"));
+							obj.setCityName(cityData.getString("Division"));
 							pincodeDataList.add(obj);
 						}
 					}
