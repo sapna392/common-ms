@@ -10,5 +10,6 @@ public class PinCodeDetails {
 	private String Pincode;
 	private String Country;
 	private String areaName;
+	private String cityName;
 
 }
